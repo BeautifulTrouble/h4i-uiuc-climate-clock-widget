@@ -23,7 +23,7 @@ const Newsfeed = ({ headline }: { headline: string }) => {
         style={{ fontWeight: 'bold' }}
         gradient={false}
         gradientWidth={10}
-        speed={200}
+        speed={isMobile ? 150 : 200}
       >
         {headline}
       </Marquee>
